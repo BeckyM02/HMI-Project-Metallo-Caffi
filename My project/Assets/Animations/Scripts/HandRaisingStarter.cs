@@ -7,9 +7,8 @@ public class HandRaisingStarter : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.H))
-        {
-            anim.speed = 0.3f; // rallenta animazione
-            anim.Play("Hand Raising", 0, 0f);
-        }
+{
+    anim.SetTrigger("StartHandRising"); 
+}
     }
 }
